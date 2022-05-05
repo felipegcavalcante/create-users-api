@@ -18,8 +18,8 @@ return new class extends Migration
             $table->string('name');
             $table->string('email')->unique();
             $table->string('cpf')->unique();
-            $table->date('data_nascimento');
-            $table->boolean('termos_aceitos');
+            $table->date('date_of_birth');
+            $table->boolean('has_accepted_terms');
             $table->timestamp('email_verified_at')->nullable();
             // $table->string('password');
             $table->rememberToken();

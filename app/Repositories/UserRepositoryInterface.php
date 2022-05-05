@@ -2,10 +2,12 @@
 
 namespace App\Repositories;
 
+use App\Models\User;
+
 interface UserRepositoryInterface
 {
     public function getAllUsers();
-    public function createUser(array $user);
-    public function verifyIfEmailAlreadyExists(string $email);
-    public function verifyIfCpfAlreadyExists(string $cpf);
+    public function save(array $user): User;
+    public function verifyIfEmailAlreadyExists(string $email): bool;
+    public function verifyIfCpfAlreadyExists(string $cpf): bool;
 }

@@ -21,8 +21,8 @@ class User extends Authenticatable
         'name',
         'email',
         'cpf',
-        'data_nascimento',
-        'termos_aceitos',
+        'date_of_birth',
+        'has_accepted_terms',
         'password',
     ];
 
